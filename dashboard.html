@@ -1,0 +1,314 @@
+<html>
+<head>
+    <!-- Angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Core JS -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <link href="/js/dashboard.js" rel="stylesheet">
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>AEM dashboard</title>
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"><i class="fa fa-heartbeat"></i> AEM dashboard</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li><a href="dashboard.html"><i class="fa fa-battery-1"></i> Development</a></li>
+                <li class="active"><a href="dashboard.html"><i class="fa fa-battery-2"></i> Test</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-battery-3"></i> Acceptance</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-battery-4"></i> Production</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h3><i class="fa fa-bookmark"></i> Bookmarks</h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead/>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-6">CRXDE Lite</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">CRXDE Package Manager</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/packmgr/index.jsp"
+                                       target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/crx/packmgr/index.jsp"
+                                       target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/packmgr/index.jsp"
+                                       target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Sites</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/sites.html/content" target="_blank"
+                                       class="btn btn-default">author</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Dam</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/assets.html/content/dam"
+                                       target="_blank"
+                                       class="btn btn-default">author</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Blueprint Manager</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/etc/blueprints.html" target="_blank"
+                                       class="btn btn-default">author</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Tree Replication Manager</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/etc/replication/treeactivation.html"
+                                       target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/system/console/bundles"
+                                       target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/system/console/bundles"
+                                       target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">OSGi Bundles</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/system/console/bundles"
+                                       target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/system/console/bundles"
+                                       target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/system/console/bundles"
+                                       target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">OSGi Configurations</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/system/console/configMgr"
+                                       target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/system/console/configMgr"
+                                       target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/system/console/configMgr"
+                                       target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">OSGi Components</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/system/console/components"
+                                       target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/system/console/components"
+                                       target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/system/console/components"
+                                       target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Translations</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/libs/cq/i18n/translator.html"
+                                       target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/libs/cq/i18n/translator.html"
+                                       target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/libs/cq/i18n/translator.html"
+                                       target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10">
+                    <h3><i class="fa fa-bolt"></i> Actions</h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead/>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-6">Add AEM System user</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Clear Category Cache</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Generate Sitemap</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10">
+                    <h3><i class="fa fa-check-square-o"></i> Healthchecks</h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead/>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-6">AEM is running</td>
+                                <td class="col-md-6">
+                                    <span class="label label-success">author</span>
+                                    <span class="label label-success">publish-a</span>
+                                    <span class="label label-danger">publish-b</span>
+                                </td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Replication Queue status</td>
+                                <td class="col-md-6">
+                                    <span class="label label-warning">author</span>
+                                    <span class="label label-success">publish-a</span>
+                                    <span class="label label-success">publish-b</span>
+                                </td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">AEM System user present</td>
+                                <td class="col-md-6">
+                                    <span class="label label-success">author</span>
+                                    <span class="label label-success">publish-a</span>
+                                    <span class="label label-success">publish-b</span>
+                                </td>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10">
+                    <h3><i class="fa fa-coffee"></i> Content Jobs</h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead/>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-6">Fix all the bad nodes</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Remove all pages without template</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Remove inactive models</td>
+                                <td class="col-md-6">
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">author</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-a</a>
+                                    <a href="http://localhost:4502/crx/de/index.jsp" target="_blank"
+                                       class="btn btn-default">publish-b</a>
+                                </td>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
