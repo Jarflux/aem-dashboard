@@ -9,6 +9,7 @@ Links
 - tree replication
 - osgi bundles
 - osgi configmgr
+- translations
 
 Actions
 - Add system user ( curl )
