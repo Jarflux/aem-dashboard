@@ -1,15 +1,15 @@
 # AEM Dashboard
 
 Links
-- CRX
-- package manager
-- projects
-- dam
-- blueprint manager
-- tree replication
-- osgi bundles
-- osgi configmgr
-- translations
+- ~~CRX~~
+- ~~package manager~~
+- ~~projects~~
+- ~~dam~~
+- ~~blueprint manager~~
+- ~~tree replication~~
+- ~~osgi bundles~~
+- ~~osgi configmgr~~
+- ~~translations~~
 
 Actions
 - Add system user ( curl )
