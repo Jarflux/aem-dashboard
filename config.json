@@ -1,7 +1,7 @@
 {
-  "enviroments": [
+  "environments": [
     {
-      "enviroment": "Development",
+      "environment": "Development",
       "servers": [
         {
           "server": "author",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "enviroment": "Test",
+      "environment": "Test",
       "servers": [
         {
           "server": "author",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "enviroment": "Acceptance",
+      "environment": "Acceptance",
       "servers": [
         {
           "server": "author",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "enviroment": "Production",
+      "environment": "Production",
       "servers": [
         {
           "server": "author",
