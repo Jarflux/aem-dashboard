@@ -21,11 +21,17 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
+    function NavbarController(applicationDataService) {
       var vm = this;
 
-      // "vm.creation" is avaible by directive option "bindToController: true"
+      vm.enviroments = {} || null;
       vm.isCollapsed = true;
+
+      applicationDataService.getData()
+          .then(function(response){
+            vm.environments = response.data.environments;
+      });
+
     }
   }
 

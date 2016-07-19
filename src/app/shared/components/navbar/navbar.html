@@ -14,10 +14,10 @@
     <div class="navbar-collapse collapse"
          uib-collapse="isCollapsed">
       <ul class="nav navbar-nav navbar-right">
-        <li ui-sref-active="active"><a ui-sref="development"><i class="fa fa-battery-1"></i> Development</a></li>
-        <li ui-sref-active="active"><a ui-sref="test"><i class="fa fa-battery-2"></i> Test</a></li>
-        <li ui-sref-active="active"><a ui-sref="acceptance"><i class="fa fa-battery-3"></i> Acceptance</a></li>
-        <li ui-sref-active="active"><a ui-sref="production"><i class="fa fa-battery-4"></i> Production</a></li>
+        <li ng-repeat="environment in vm.environments"
+            ui-sref-active="active">
+          <a ui-sref="{{ environment.name }}"><i class="fa {{ environment.icon }}"></i> {{ environment.name }}</a>
+        </li>
       </ul>
     </div>
   </div>
