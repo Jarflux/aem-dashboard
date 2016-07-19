@@ -1,0 +1,20 @@
+{
+  "environments": {
+    "dev": {
+      "name": "development",
+      "icon": "fa-battery-1"
+    },
+    "tst": {
+      "name": "test",
+      "icon": "fa-battery-2"
+    },
+    "acc": {
+      "name": "acceptance",
+      "icon": "fa-battery-3"
+    },
+    "prd": {
+      "name": "production",
+      "icon": "fa-battery-4"
+    }
+  }
+}
