@@ -27,7 +27,7 @@
 
       applicationDataService.getData()
           .then(function(response){
-            vm.environments = response.data.environments;
+            vm.environments = response.environments;
       });
 
     }

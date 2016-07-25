@@ -1,13 +1,20 @@
-<div class="row" ng-repeat="environment in vm.environments">
-  <div class="col-sm-6 col-md-4" ng-repeat="server in environment.servers">
-    <div class="thumbnail">
-      <div class="caption">
-        <h2>{{environment.name}}</h2>
-        <h3>{{ server.server }}</h3>
-        <p>{{server.type}}</p>
-        <p><a target="_blank" ng-href="{{server.url}}">{{ server.url }} </a></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="text-primary">{{vm.environment.name}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-md-2" ng-repeat="server in vm.environment.servers">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>{{vm.environment.name}} - {{ server.server }}</h3>
+        <span ng-repeat="link in vm.linkTypes[server.type]">
+          <a class="btn {{link.buttonType ? 'btn-' + link.buttonType : 'btn-default'}}"
+             target="_blank" ng-href="{{server.url + link.url}}">{{ link.label }}</a>
+        </span>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
