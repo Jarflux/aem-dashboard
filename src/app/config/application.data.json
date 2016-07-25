@@ -73,13 +73,23 @@
   "linkTypes": {
     "author": [
       {
-        "label": "crx",
+        "label": "CRX",
         "url": "/crx/de/index.jsp",
         "buttonType": "primary"
       },
       {
-        "label": "sites",
+        "label": "Sites",
         "url": "/sites.html/content/platform-blueprints",
+        "buttonType": "success"
+      },
+      {
+        "label": "Rollout",
+        "url": "/etc/blueprints.html",
+        "buttonType": "success"
+      },
+      {
+        "label": "Replication",
+        "url": "/etc/replication.html",
         "buttonType": "success"
       }
     ],
