@@ -2,10 +2,10 @@
   "name": "aemDashboard",
   "version": "0.0.0",
   "dependencies": {
-    "angular-animate": "~1.4.2",
-    "angular-cookies": "~1.4.2",
-    "angular-sanitize": "~1.4.2",
-    "angular-messages": "~1.4.2",
+    "angular-animate": "~1.5.0",
+    "angular-cookies": "~1.5.0",
+    "angular-sanitize": "~1.5.0",
+    "angular-messages": "~1.5.0",
     "angular-ui-router": "~0.2.15",
     "bootstrap-sass": "~3.3.5",
     "angular-bootstrap": "~0.13.4",
@@ -13,7 +13,7 @@
     "angular-toastr": "~1.5.0",
     "moment": "~2.10.6",
     "animate.css": "~3.4.0",
-    "angular": "~1.4.2",
+    "angular": "~1.5.0",
     "font-awesome": "^4.6.3"
   },
   "devDependencies": {
@@ -30,8 +30,5 @@
         "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
     }
-  },
-  "resolutions": {
-    "angular": "~1.4.2"
   }
 }
