@@ -55,7 +55,7 @@
         {
           "server": "author",
           "type": "author",
-          "url": "http://author-002.acc.aws.intranet:4502"
+          "url": "http://author-002.prd.aws.intranet:4502"
         },
         {
           "server": "publish a",
