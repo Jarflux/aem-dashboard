@@ -1,3 +1,4 @@
+<!--
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
@@ -18,3 +19,31 @@
     </div>
   </div>
 </div>
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="text-primary">{{vm.environment.name}}</h1>
+    </div>
+  </div>
+  <div class="row" ng-repeat="server in vm.environment.servers">
+    <div class="col-sm-12 text-uppercase text-primary"><h2>{{server.server}}</h2></div>
+    <div class="col-sm-2 col-md-2" ng-repeat="link in vm.linkTypes[server.type]">
+
+
+      <a target="_blank" ng-href="{{server.url + link.url}}">
+
+        <div class="panel {{link.buttonType ? 'panel-' + link.buttonType : 'panel-default'}}">
+          <div class="panel-heading">&lt; &ac; &gt;</div>
+          <div class="panel-body">
+            <h4>{{ link.label }}</h4>
+          </div>
+        </div>
+
+      </a>
+    </div>
+  </div>
+</div>
+
+
