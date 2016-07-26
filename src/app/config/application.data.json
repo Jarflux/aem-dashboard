@@ -1,7 +1,7 @@
 {
   "environments": {
     "dev": {
-      "name": "development",
+      "name": "LCL",
       "icon": "fa-battery-1",
       "servers": [
         {
@@ -12,7 +12,7 @@
       ]
     },
     "tst": {
-      "name": "test",
+      "name": "TST 001",
       "icon": "fa-battery-2",
       "servers": [
         {
@@ -28,7 +28,7 @@
       ]
     },
     "acc": {
-      "name": "acceptance",
+      "name": "ACC 001",
       "icon": "fa-battery-3",
       "servers": [
         {
@@ -49,7 +49,7 @@
       ]
     },
     "prd": {
-      "name": "production",
+      "name": "PRD 002",
       "icon": "fa-battery-4",
       "servers": [
         {
@@ -73,32 +73,117 @@
   "linkTypes": {
     "author": [
       {
-        "label": "CRX",
+        "label": "CRXDE Lite",
         "url": "/crx/de/index.jsp",
+        "buttonType": "primary"
+      },
+      {
+        "label": "Package Manger",
+        "url": "/crx/packmgr/index.jsp",
         "buttonType": "primary"
       },
       {
         "label": "Sites",
         "url": "/sites.html/content/platform-blueprints",
-        "buttonType": "success"
+        "buttonType": "default"
       },
       {
-        "label": "Rollout",
+        "label": "DAM Assets",
+        "url": "/assets.html/content/dam",
+        "buttonType": "default"
+      },
+      {
+        "label": "Rollout Manager",
         "url": "/etc/blueprints.html",
         "buttonType": "success"
       },
       {
-        "label": "Replication",
-        "url": "/etc/replication.html",
+        "label": "Tree Activation",
+        "url": "/etc/replication/treeactivation.html",
         "buttonType": "success"
+      },
+      {
+        "label": "Replication Agents",
+        "url": "/etc/replication/agents.author.html",
+        "buttonType": "success"
+      },
+      {
+        "label": "OSGi Bundles",
+        "url": "/system/console/bundles",
+        "buttonType": "danger"
+      },
+      {
+        "label": "OSGi Config",
+        "url": "/system/console/configMgr",
+        "buttonType": "danger"
+      },
+      {
+        "label": "OSGi Components",
+        "url": "/system/console/components",
+        "buttonType": "danger"
       }
     ],
     "publish": [
       {
-        "label": "crx",
-        "url": "/crx/de/index.jsp"
+        "label": "CRXDE Lite",
+        "url": "/crx/de/index.jsp",
+        "buttonType": "primary"
+      },
+      {
+        "label": "Package Manger",
+        "url": "/crx/packmgr/index.jsp",
+        "buttonType": "primary"
+      },
+      {
+        "label": "OSGi Bundles",
+        "url": "/system/console/configMgr",
+        "buttonType": "danger"
+      },
+      {
+        "label": "OSGi Config",
+        "url": "/etc/replication/agents.author.html",
+        "buttonType": "danger"
+      },
+      {
+        "label": "OSGi Components",
+        "url": "/system/console/components",
+        "buttonType": "danger"
       }
     ]
+  },
+  "mainwebshops": {
+    "asadventure": {
+      "label": "AS Adventure",
+      "market": "be"
+    },
+    "bever": {
+      "label": "Bever",
+      "market": "nl"
+    },
+    "cotswold": {
+      "label": "Cotswold",
+      "market": "uk"
+    },
+    "cyclesurgery": {
+      "label": "CycleSurgery",
+      "market": "uk"
+    },
+    "juttu": {
+      "label": "Juttu",
+      "market": "be"
+    },
+    "runnersneed": {
+      "label": "Runnersneed",
+      "market": "uk"
+    },
+    "snowandrock": {
+      "label": "Snow&Rock",
+      "market": "uk"
+    },
+    "yaya": {
+      "label": "Yaya",
+      "market": "be"
+    }
   }
 }
 
