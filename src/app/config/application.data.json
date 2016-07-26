@@ -75,79 +75,94 @@
       {
         "label": "CRXDE Lite",
         "url": "/crx/de/index.jsp",
-        "buttonType": "primary"
+        "icon": "globe",
+        "brandColor": "primary"
       },
       {
         "label": "Package Manger",
         "url": "/crx/packmgr/index.jsp",
-        "buttonType": "primary"
+        "icon": "globe",
+        "brandColor": "primary"
       },
       {
         "label": "Sites",
         "url": "/sites.html/content/platform-blueprints",
-        "buttonType": "default"
+        "icon": "globe",
+        "brandColor": "default"
       },
       {
         "label": "DAM Assets",
         "url": "/assets.html/content/dam",
-        "buttonType": "default"
+        "icon": "globe",
+        "brandColor": "default"
       },
       {
         "label": "Rollout Manager",
         "url": "/etc/blueprints.html",
-        "buttonType": "success"
+        "icon": "globe",
+        "brandColor": "success"
       },
       {
         "label": "Tree Activation",
         "url": "/etc/replication/treeactivation.html",
-        "buttonType": "success"
+        "icon": "globe",
+        "brandColor": "success"
       },
       {
         "label": "Replication Agents",
         "url": "/etc/replication/agents.author.html",
-        "buttonType": "success"
+        "icon": "globe",
+        "brandColor": "success"
       },
       {
         "label": "OSGi Bundles",
         "url": "/system/console/bundles",
-        "buttonType": "danger"
+        "icon": "globe",
+        "brandColor": "danger"
       },
       {
         "label": "OSGi Config",
         "url": "/system/console/configMgr",
-        "buttonType": "danger"
+        "icon": "globe",
+        "brandColor": "danger"
       },
       {
         "label": "OSGi Components",
         "url": "/system/console/components",
-        "buttonType": "danger"
+        "icon": "globe",
+        "brandColor": "danger"
       }
     ],
     "publish": [
       {
         "label": "CRXDE Lite",
         "url": "/crx/de/index.jsp",
-        "buttonType": "primary"
+        "icon": "globe",
+        "brandColor": "primary"
       },
       {
         "label": "Package Manger",
         "url": "/crx/packmgr/index.jsp",
-        "buttonType": "primary"
+        "icon": "globe",
+        "brandColor": "primary"
       },
       {
         "label": "OSGi Bundles",
         "url": "/system/console/configMgr",
-        "buttonType": "danger"
+        "icon": "globe",
+        "brandColor": "danger"
       },
       {
         "label": "OSGi Config",
         "url": "/etc/replication/agents.author.html",
-        "buttonType": "danger"
+        "icon": "globe",
+        "brandColor": "danger"
       },
       {
         "label": "OSGi Components",
         "url": "/system/console/components",
-        "buttonType": "danger"
+        "icon": "globe",
+        "brandColor": "danger"
       }
     ]
   },

@@ -1,49 +1,32 @@
-<!--
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12">
-      <h1 class="text-primary">{{vm.environment.name}}</h1>
+    <div class="col-md-12">
+      <h1 class="page-header">{{ vm.environment.name }}</h1>
     </div>
   </div>
+
   <div class="row">
-    <div class="col-sm-2 col-md-2" ng-repeat="server in vm.environment.servers">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>{{vm.environment.name}} - {{ server.server }}</h3>
-        <span ng-repeat="link in vm.linkTypes[server.type]">
-          <a class="btn {{link.buttonType ? 'btn-' + link.buttonType : 'btn-default'}}"
-             target="_blank" ng-href="{{server.url + link.url}}">{{ link.label }}</a>
-        </span>
+    <div class="col-md-4"
+         ng-repeat="server in vm.environment.servers">
+      <div class="panel panel-default">
+        <div class="panel-heading text-capitalize">{{ server.server }} <i class="fa fa-link pull-right"></i></div>
+        <div class="panel-body">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam amet at et laudantium maxime quas qui, quibusdam quidem quo quos tenetur totam veniam voluptatem voluptatibus. Amet laudantium quisquam quos.</p>
+
         </div>
+
+        <ul class="list-group">
+          <li class="list-group-item"
+              ng-repeat="link in vm.linkTypes[server.type]">
+            <a target="_blank" ng-href="{{server.url + link.url}}">{{ link.label }} <i class="fa {{link.icon ? 'fa-' + link.icon : ''}} pull-right"></i></a>
+          </li>
+        </ul>
+
       </div>
     </div>
   </div>
-</div>
--->
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1 class="text-primary">{{vm.environment.name}}</h1>
-    </div>
-  </div>
-  <div class="row" ng-repeat="server in vm.environment.servers">
-    <div class="col-sm-12 text-uppercase text-primary"><h2>{{server.server}}</h2></div>
-    <div class="col-sm-2 col-md-2" ng-repeat="link in vm.linkTypes[server.type]">
-
-
-      <a target="_blank" ng-href="{{server.url + link.url}}">
-
-        <div class="panel {{link.buttonType ? 'panel-' + link.buttonType : 'panel-default'}}">
-          <div class="panel-heading">&lt; &ac; &gt;</div>
-          <div class="panel-body">
-            <h4>{{ link.label }}</h4>
-          </div>
-        </div>
-
-      </a>
-    </div>
-  </div>
 </div>
 
 
