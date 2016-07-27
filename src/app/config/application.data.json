@@ -2,6 +2,7 @@
   "environments": {
     "dev": {
       "name": "LCL",
+      "title": "Local",
       "icon": "fa-battery-1",
       "servers": [
         {
@@ -13,6 +14,7 @@
     },
     "tst": {
       "name": "TST 001",
+      "title": "Test",
       "icon": "fa-battery-2",
       "servers": [
         {
@@ -29,6 +31,7 @@
     },
     "acc": {
       "name": "ACC 001",
+      "title": "Acceptance",
       "icon": "fa-battery-3",
       "servers": [
         {
@@ -50,6 +53,7 @@
     },
     "prd": {
       "name": "PRD 002",
+      "title": "Production",
       "icon": "fa-battery-4",
       "servers": [
         {
@@ -76,60 +80,60 @@
         "label": "CRXDE Lite",
         "url": "/crx/de/index.jsp",
         "icon": "globe",
-        "brandColor": "primary"
+        "brandColor": "info"
       },
       {
         "label": "Package Manger",
         "url": "/crx/packmgr/index.jsp",
-        "icon": "globe",
-        "brandColor": "primary"
+        "icon": "cube",
+        "brandColor": "info"
       },
       {
         "label": "Sites",
         "url": "/sites.html/content/platform-blueprints",
-        "icon": "globe",
+        "icon": "sitemap",
         "brandColor": "default"
       },
       {
         "label": "DAM Assets",
         "url": "/assets.html/content/dam",
-        "icon": "globe",
+        "icon": "picture-o",
         "brandColor": "default"
       },
       {
         "label": "Rollout Manager",
         "url": "/etc/blueprints.html",
-        "icon": "globe",
+        "icon": "rocket",
         "brandColor": "success"
       },
       {
         "label": "Tree Activation",
         "url": "/etc/replication/treeactivation.html",
-        "icon": "globe",
+        "icon": "code-fork",
         "brandColor": "success"
       },
       {
         "label": "Replication Agents",
         "url": "/etc/replication/agents.author.html",
-        "icon": "globe",
+        "icon": "refresh",
         "brandColor": "success"
       },
       {
         "label": "OSGi Bundles",
         "url": "/system/console/bundles",
-        "icon": "globe",
+        "icon": "cubes",
         "brandColor": "danger"
       },
       {
         "label": "OSGi Config",
         "url": "/system/console/configMgr",
-        "icon": "globe",
+        "icon": "cogs",
         "brandColor": "danger"
       },
       {
         "label": "OSGi Components",
         "url": "/system/console/components",
-        "icon": "globe",
+        "icon": "cubes",
         "brandColor": "danger"
       }
     ],

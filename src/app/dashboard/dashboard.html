@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="page-header">{{ vm.environment.name }}</h1>
+      <h1 class="page-header">{{ vm.environment.title }} <small>- {{ vm.environment.name }}</small></h1>
     </div>
   </div>
 
@@ -10,16 +10,11 @@
          ng-repeat="server in vm.environment.servers">
       <div class="panel panel-default">
         <div class="panel-heading text-capitalize">{{ server.server }} <i class="fa fa-link pull-right"></i></div>
-        <div class="panel-body">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam amet at et laudantium maxime quas qui, quibusdam quidem quo quos tenetur totam veniam voluptatem voluptatibus. Amet laudantium quisquam quos.</p>
-
-        </div>
 
         <ul class="list-group">
           <li class="list-group-item"
               ng-repeat="link in vm.linkTypes[server.type]">
-            <a target="_blank" ng-href="{{server.url + link.url}}">{{ link.label }} <i class="fa {{link.icon ? 'fa-' + link.icon : ''}} pull-right"></i></a>
+            <a target="_blank" ng-href="{{ server.url + link.url }}">{{ link.label }} <i class="fa {{ link.icon ? 'fa-' + link.icon : '' }} pull-right {{ link.brandColor ? 'text-' + link.brandColor : '' }}"></i></a>
           </li>
         </ul>
 
