@@ -152,13 +152,13 @@
       },
       {
         "label": "OSGi Bundles",
-        "url": "/system/console/configMgr",
+        "url": "/system/console/bundles",
         "icon": "globe",
         "brandColor": "danger"
       },
       {
         "label": "OSGi Config",
-        "url": "/etc/replication/agents.author.html",
+        "url": "/system/console/configMgr",
         "icon": "globe",
         "brandColor": "danger"
       },
