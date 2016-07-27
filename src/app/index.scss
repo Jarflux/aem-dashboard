@@ -16,11 +16,17 @@ $gray-lighter:  hsl(0, 0%, 90%);
 $white-dark:    hsl(0, 0%, 96%);
 $white:         hsl(0, 0%, 100%);
 
-$brand-primary: hsl(216, 60%, 49%);
-$brand-success: hsl(93, 45%, 57%);
-$brand-info:    hsl(213, 100%, 76%);
-$brand-warning: hsl(43, 94%, 70%);
-$brand-danger:  hsl(6, 63%, 52%);
+//$brand-primary: hsl(216, 60%, 49%);
+//$brand-success: hsl(93, 45%, 57%);
+//$brand-info:    hsl(213, 100%, 76%);
+//$brand-warning: hsl(43, 94%, 70%);
+//$brand-danger:  hsl(6, 63%, 52%);
+
+$brand-primary: hsl(208, 100%, 42%);
+$brand-success: hsl(120, 39%, 54%);
+$brand-info:    hsl(194, 66%, 61%);
+$brand-warning: hsl(35, 84%, 62%);
+$brand-danger:  hsl(2, 64%, 58%);
 
 $body-bg: $white-dark;
 $border-radius-base: 0;
@@ -41,9 +47,6 @@ $navbar-inverse-link-active-bg: tranparent;
 $navbar-border-radius: 0;
 $navbar-inverse-toggle-border-color: red;
 
-$panel-default-heading-bg: $gray-light;
-$panel-default-border: $gray-lighter;
-
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
@@ -62,6 +65,42 @@ $panel-default-border: $gray-lighter;
 body {
   padding-top: $navbar-height;
 }
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+//.ui-view-container {
+//  position: relative;
+//  //height: 65px;
+//}
+
+//[ui-view].ng-enter, [ui-view].ng-leave, [ui-view].ng-enter-active, [ui-view].ng-leave-active {
+//  //position: absolute;
+//  //left: 0;
+//  //right: 0;
+//  transition:all .3s ease-in-out;
+//}
+//
+//[ui-view].ng-enter {
+//  opacity: 1;
+//  //transform:scale3d(0.5, 0.5, 0.5);
+//}
+//
+//[ui-view].ng-enter-active {
+//  opacity: 1;
+//  //transform:scale3d(1, 1, 1);
+//}
+//
+//[ui-view].ng-leave {
+//  opacity: 0;
+//  //transform:translate3d(0, 0, 0);
+//}
+//
+//[ui-view].ng-leave-active {
+//  opacity: 0;
+//  //transform:translate3d(100vW, 0, 0);
+//}
+
+//https://scotch.io/tutorials/angularjs-multi-step-form-using-ui-router
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

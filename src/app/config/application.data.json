@@ -1,6 +1,6 @@
 {
   "environments": {
-    "dev": {
+    "local": {
       "name": "LCL",
       "title": "Local",
       "icon": "fa-battery-1",
@@ -92,13 +92,13 @@
         "label": "Sites",
         "url": "/sites.html/content/platform-blueprints",
         "icon": "sitemap",
-        "brandColor": "default"
+        "brandColor": "primary"
       },
       {
         "label": "DAM Assets",
         "url": "/assets.html/content/dam",
         "icon": "picture-o",
-        "brandColor": "default"
+        "brandColor": "primary"
       },
       {
         "label": "Rollout Manager",
