@@ -25,7 +25,7 @@
         {
           "server": "publish",
           "type": "publish",
-          "url": "http://publish-001.tst.aws.intranet:4503"
+          "url": "http://publish-a-001.tst.aws.intranet:4503"
         }
       ]
     },
