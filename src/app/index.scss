@@ -66,6 +66,11 @@ body {
   padding-top: $navbar-height;
 }
 
+a:hover,a:active,a:link,a:focus,a:visited {
+  text-decoration: none;
+}
+
+
 /* Have to set height explicity on ui-view
 to prevent collapsing during animation*/
 //.ui-view-container {
