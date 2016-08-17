@@ -135,6 +135,12 @@
         "url": "/system/console/components",
         "icon": "cubes",
         "brandColor": "danger"
+      },
+      {
+        "label": "Resource Resolver",
+        "url": "/system/console/jcrresolver",
+        "icon": "exchange",
+        "brandColor": "danger"
       }
     ],
     "publish": [
@@ -166,6 +172,12 @@
         "label": "OSGi Components",
         "url": "/system/console/components",
         "icon": "globe",
+        "brandColor": "danger"
+      },
+      {
+        "label": "Resource Resolver",
+        "url": "/system/console/jcrresolver",
+        "icon": "exchange",
         "brandColor": "danger"
       }
     ]
