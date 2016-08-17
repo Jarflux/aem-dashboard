@@ -1,0 +1,223 @@
+{
+  "environments": {
+    "local": {
+      "name": "LCL",
+      "title": "Local",
+      "icon": "fa-battery-1",
+      "servers": [
+        {
+          "server": "author",
+          "type": "author",
+          "url": "http://localhost:4502"
+        }
+      ]
+    },
+    "tst": {
+      "name": "TST 001",
+      "title": "Test",
+      "icon": "fa-battery-2",
+      "servers": [
+        {
+          "server": "author",
+          "type": "author",
+          "url": "http://author-001.tst.aws.intranet:4502"
+        },
+        {
+          "server": "publish",
+          "type": "publish",
+          "url": "http://publish-a-001.tst.aws.intranet:4503"
+        }
+      ]
+    },
+    "acc": {
+      "name": "ACC 001",
+      "title": "Acceptance",
+      "icon": "fa-battery-3",
+      "servers": [
+        {
+          "server": "author",
+          "type": "author",
+          "url": "http://author-001.acc.aws.intranet:4502"
+        },
+        {
+          "server": "publish a",
+          "type": "publish",
+          "url": "http://publish-a-001.acc.aws.intranet:4503"
+        },
+        {
+          "server": "publish b",
+          "type": "publish",
+          "url": "http://publish-b-001.acc.aws.intranet:4503"
+        }
+      ]
+    },
+    "prd": {
+      "name": "PRD 002",
+      "title": "Production",
+      "icon": "fa-battery-4",
+      "servers": [
+        {
+          "server": "author",
+          "type": "author",
+          "url": "http://author-002.prd.aws.intranet:4502"
+        },
+        {
+          "server": "publish a",
+          "type": "publish",
+          "url": "http://publish-a-002.prd.aws.intranet:4503"
+        },
+        {
+          "server": "publish b",
+          "type": "publish",
+          "url": "http://publish-b-002.prd.aws.intranet:4503"
+        }
+      ]
+    }
+  },
+  "linkTypes": {
+    "author": [
+      {
+        "label": "CRXDE Lite",
+        "url": "/crx/de/index.jsp",
+        "icon": "globe",
+        "brandColor": "info"
+      },
+      {
+        "label": "Package Manger",
+        "url": "/crx/packmgr/index.jsp",
+        "icon": "cube",
+        "brandColor": "info"
+      },
+      {
+        "label": "Sites",
+        "url": "/sites.html/content/platform-blueprints",
+        "icon": "sitemap",
+        "brandColor": "primary"
+      },
+      {
+        "label": "DAM Assets",
+        "url": "/assets.html/content/dam",
+        "icon": "picture-o",
+        "brandColor": "primary"
+      },
+      {
+        "label": "Rollout Manager",
+        "url": "/etc/blueprints.html",
+        "icon": "rocket",
+        "brandColor": "success"
+      },
+      {
+        "label": "Tree Activation",
+        "url": "/etc/replication/treeactivation.html",
+        "icon": "code-fork",
+        "brandColor": "success"
+      },
+      {
+        "label": "Replication Agents",
+        "url": "/etc/replication/agents.author.html",
+        "icon": "refresh",
+        "brandColor": "success"
+      },
+      {
+        "label": "OSGi Bundles",
+        "url": "/system/console/bundles",
+        "icon": "cubes",
+        "brandColor": "danger"
+      },
+      {
+        "label": "OSGi Config",
+        "url": "/system/console/configMgr",
+        "icon": "wrench",
+        "brandColor": "danger"
+      },
+      {
+        "label": "OSGi Components",
+        "url": "/system/console/components",
+        "icon": "cubes",
+        "brandColor": "danger"
+      },
+      {
+        "label": "Resource Resolver",
+        "url": "/system/console/jcrresolver",
+        "icon": "exchange",
+        "brandColor": "danger"
+      }
+    ],
+    "publish": [
+      {
+        "label": "CRXDE Lite",
+        "url": "/crx/de/index.jsp",
+        "icon": "globe",
+        "brandColor": "primary"
+      },
+      {
+        "label": "Package Manger",
+        "url": "/crx/packmgr/index.jsp",
+        "icon": "globe",
+        "brandColor": "primary"
+      },
+      {
+        "label": "OSGi Bundles",
+        "url": "/system/console/bundles",
+        "icon": "globe",
+        "brandColor": "danger"
+      },
+      {
+        "label": "OSGi Config",
+        "url": "/system/console/configMgr",
+        "icon": "wrench",
+        "brandColor": "danger"
+      },
+      {
+        "label": "OSGi Components",
+        "url": "/system/console/components",
+        "icon": "cubes",
+        "brandColor": "danger"
+      },
+      {
+        "label": "Resource Resolver",
+        "url": "/system/console/jcrresolver",
+        "icon": "exchange",
+        "brandColor": "danger"
+      }
+    ]
+  },
+  "mainwebshops": {
+    "asadventure": {
+      "label": "AS Adventure",
+      "market": "be"
+    },
+    "bever": {
+      "label": "Bever",
+      "market": "nl"
+    },
+    "cotswold": {
+      "label": "Cotswold",
+      "market": "uk"
+    },
+    "cyclesurgery": {
+      "label": "CycleSurgery",
+      "market": "uk"
+    },
+    "juttu": {
+      "label": "Juttu",
+      "market": "be"
+    },
+    "runnersneed": {
+      "label": "Runnersneed",
+      "market": "uk"
+    },
+    "snowandrock": {
+      "label": "Snow&Rock",
+      "market": "uk"
+    },
+    "yaya": {
+      "label": "Yaya",
+      "market": "be"
+    }
+  }
+}
+
+
+
+

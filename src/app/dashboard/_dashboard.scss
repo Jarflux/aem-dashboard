@@ -1,0 +1,38 @@
+.panel {
+  border-left: 0;
+
+  &-dark {
+    .panel-heading {
+      background-color: $black;
+      color: $gray-light;
+    }
+  }
+}
+
+.list-group-bordered {
+  .list-group-item {
+    padding: 0;
+
+    .list-group-link {
+      display: block;
+      padding: 10px 15px;
+      border-left-width: 3px;
+      border-left-style: solid;
+      transition: border-width 0.1s ease-in-out;
+
+      &.text-primary  { color: $brand-primary; }
+      &.text-info     { color: darken($brand-info, 5%); }
+      &.text-success  { color: $brand-success; }
+      &.text-warning  { color: $brand-warning; }
+      &.text-danger   { color: $brand-danger; }
+
+
+      &:hover, &:active, &:visited, &:focus {
+        text-decoration: none;
+        border-width: 6px;
+        cursor: pointer;
+      }
+    }
+
+  }
+}

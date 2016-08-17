@@ -1,0 +1,110 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "../../bower_components/font-awesome/fonts/"; //Todo Fix fa font in gulp build task
+//@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+$black:         hsl(0, 0%, 14%);
+$gray-darker:   hsl(0, 0%, 25%);
+$gray-dark:     hsl(0, 0%, 27%);
+$gray:          hsl(0, 0%, 59%);
+$gray-light:    hsl(0, 0%, 80%);
+$gray-lighter:  hsl(0, 0%, 90%);
+$white-dark:    hsl(0, 0%, 96%);
+$white:         hsl(0, 0%, 100%);
+
+//$brand-primary: hsl(216, 60%, 49%);
+//$brand-success: hsl(93, 45%, 57%);
+//$brand-info:    hsl(213, 100%, 76%);
+//$brand-warning: hsl(43, 94%, 70%);
+//$brand-danger:  hsl(6, 63%, 52%);
+
+$brand-primary: hsl(208, 100%, 42%);
+$brand-success: hsl(120, 39%, 54%);
+$brand-info:    hsl(194, 66%, 61%);
+$brand-warning: hsl(35, 84%, 62%);
+$brand-danger:  hsl(2, 64%, 58%);
+
+$body-bg: $white-dark;
+$border-radius-base: 0;
+
+//$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-sans-serif: 'Lato', sans-serif;
+$headings-font-weight: 700;
+$text-color: hsl(0, 0%, 20%);
+$text-muted: hsl(0, 0%, 59%);
+$headings-color: $text-color;
+$page-header-border-color: $gray-lighter;
+
+$navbar-inverse-bg: $black;
+$navbar-inverse-border: $black;
+$navbar-inverse-brand-color: $gray-light;
+$navbar-inverse-link-color: $gray-light;
+$navbar-inverse-link-active-bg: tranparent;
+$navbar-border-radius: 0;
+$navbar-inverse-toggle-border-color: red;
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding-top: $navbar-height;
+}
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+//.ui-view-container {
+//  position: relative;
+//  //height: 65px;
+//}
+
+//[ui-view].ng-enter, [ui-view].ng-leave, [ui-view].ng-enter-active, [ui-view].ng-leave-active {
+//  //position: absolute;
+//  //left: 0;
+//  //right: 0;
+//  transition:all .3s ease-in-out;
+//}
+//
+//[ui-view].ng-enter {
+//  opacity: 1;
+//  //transform:scale3d(0.5, 0.5, 0.5);
+//}
+//
+//[ui-view].ng-enter-active {
+//  opacity: 1;
+//  //transform:scale3d(1, 1, 1);
+//}
+//
+//[ui-view].ng-leave {
+//  opacity: 0;
+//  //transform:translate3d(0, 0, 0);
+//}
+//
+//[ui-view].ng-leave-active {
+//  opacity: 0;
+//  //transform:translate3d(100vW, 0, 0);
+//}
+
+//https://scotch.io/tutorials/angularjs-multi-step-form-using-ui-router
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
