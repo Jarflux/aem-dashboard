@@ -1,18 +1,33 @@
 <div class="jumbotron text-center">
   <h1>AEM Dashboard!</h1>
+
   <p class="lead">
     All your aem management needs
   </p>
-  <h2><i class="fa fa-heartbeat"></i></h2><br>
 </div>
 
 <div class="container">
+  <div class="row">
+    <div class="col-sm-2" ng-repeat="link in vm.links">
+      <div class="thumbnail text-center">
+        <a href="{{link.url}}" target="_blank">
+          <div class="xyz"></div>
+          <div class="caption">
+            <h3>{{ link.title }}</h3>
+
+            <h3><i class="fa {{link.icon}}"></i></h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-sm-6" ng-repeat="(key, environment) in vm.environments">
       <div class="thumbnail text-center" ui-sref="dashboard({ environment: key})">
         <!--<img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">-->
         <div class="caption">
           <h2>{{ environment.title }}</h2>
+
           <h3><i class="fa {{environment.icon}}"></i></h3>
           <!--<p><a ui-sref="dashboard({ environment: key})">{{ environment.title }}</a></p>-->
         </div>
