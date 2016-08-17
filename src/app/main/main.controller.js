@@ -14,6 +14,7 @@
       applicationDataService.getData()
         .then(function (response) {
           vm.environments = response.environments;
+          vm.links = response.links;
         });
     }
 

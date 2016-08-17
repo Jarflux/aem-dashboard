@@ -182,6 +182,80 @@
       }
     ]
   },
+  "links": [
+    {
+      "name": "Bitbucket",
+      "title": "Bitbucket",
+      "icon": "fa-bitbucket",
+      "url": "https://bitbucket.org/asadventure/"
+    },
+    {
+      "name": "Confluence",
+      "title": "Confluence",
+      "icon": "fa-folder-open",
+      "url": "https://asadventure.atlassian.net/wiki/display/WEB/WebRefactoring"
+    },
+    {
+      "name": "Consul Acc",
+      "title": "Consul Acc",
+      "icon": "fa-connectdevelop",
+      "url": "http://consul-cluster1.acc.aws.intranet:8500/"
+    },
+    {
+      "name": "Consul Prd",
+      "title": "Consul Prd",
+      "icon": "fa-connectdevelop",
+      "url": "http://consul-cluster1-002.prd.aws.intranet:8500/"
+    },
+    {
+      "name": "Datadog",
+      "title": "Datadog",
+      "icon": "fa-paw",
+      "url": "https://app.datadoghq.com/dash/136623/aem-prd-002-full-stack?live=true&page=0&is_auto=false&from_ts=1468236902285&to_ts=1468240502285&tile_size=m"
+    },
+    {
+      "name": "Jenkins",
+      "title": "Jenkins",
+      "icon": "fa-stack-overflow",
+      "url": "http://cissy.aws.intranet:7080/view/AEM/"
+    },
+    {
+      "name": "JIRA",
+      "title": "JIRA",
+      "icon": "fa-tasks",
+      "url": "https://asadventure.atlassian.net/secure/RapidBoard.jspa?projectKey=ASWR&rapidView=5"
+    },
+    {
+      "name": "Nexus",
+      "title": "Nexus",
+      "icon": "fa-cubes",
+      "url": "http://cissy.aws.intranet:8081/nexus"
+    },
+    {
+      "name": "Obsid Acc",
+      "title": "Obsid Acc",
+      "icon": "fa-gavel",
+      "url": "http://engine.acc.abeq.aws.intranet:8080/login"
+    },
+    {
+      "name": "Obsid Prd",
+      "title": "Obsid Prd",
+      "icon": "fa-gavel",
+      "url": "http://engine.abeq.aws.intranet:8080/login"
+    },
+    {
+      "name": "Sonar",
+      "title": "Sonar",
+      "icon": "fa-wifi",
+      "url": "http://cissy.aws.intranet:9000/"
+    },
+    {
+      "name": "Toggl",
+      "title": "Toggl",
+      "icon": "fa-clock-o",
+      "url": "https://www.toggl.com/app/timer"
+    }
+  ],
   "mainwebshops": {
     "asadventure": {
       "label": "AS Adventure",
