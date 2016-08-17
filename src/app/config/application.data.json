@@ -127,7 +127,7 @@
       {
         "label": "OSGi Config",
         "url": "/system/console/configMgr",
-        "icon": "cogs",
+        "icon": "wrench",
         "brandColor": "danger"
       },
       {
@@ -165,13 +165,13 @@
       {
         "label": "OSGi Config",
         "url": "/system/console/configMgr",
-        "icon": "globe",
+        "icon": "wrench",
         "brandColor": "danger"
       },
       {
         "label": "OSGi Components",
         "url": "/system/console/components",
-        "icon": "globe",
+        "icon": "cubes",
         "brandColor": "danger"
       },
       {
