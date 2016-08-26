@@ -1,12 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="page-header">{{ vm.environment.title }} <small>- {{ vm.environment.name }}</small></h1>
+      <h1 class="page-header">{{ vm.environment.title }}
+        <small>- {{ vm.environment.name }}</small>
+      </h1>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-4"
+    <div class="col-md-3"
          ng-repeat="server in vm.environment.servers">
       <div class="panel panel-dark">
         <div class="panel-heading text-capitalize">{{ server.server }} <i class="fa fa-link pull-right"></i></div>
@@ -16,12 +18,28 @@
               ng-repeat="link in vm.linkTypes[server.type]">
             <a class="list-group-link {{ link.brandColor ? 'text-' + link.brandColor : '' }}"
                target="_blank"
-               ng-href="{{ server.url + link.url }}">{{ link.label }} <i class="fa {{ link.icon ? 'fa-' + link.icon : '' }} pull-right"></i></a>
+               ng-href="{{ server.url + link.url }}">{{ link.label }} <i
+              class="fa {{ link.icon ? 'fa-' + link.icon : '' }} pull-right"></i></a>
           </li>
         </ul>
-
       </div>
     </div>
+
+    <div class="col-md-3" ng-hide="vm.environmentKey == 'local'">
+      <div class="panel panel-dark">
+        <div class="panel-heading text-capitalize">Sites <i class="fa fa-link pull-right"></i></div>
+
+        <ul class="list-group list-group-bordered">
+          <li class="list-group-item" ng-repeat="site in vm.sites">
+            <a ng-show="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.liveUrl }}">{{ site.label
+              }} <i class="fa fa-globe pull-right"></i></a>
+            <a ng-hide="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.internalUrl }}">{{ site.label
+              }} <i class="fa fa-globe pull-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
 </div>

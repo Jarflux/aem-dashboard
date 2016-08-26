@@ -79,26 +79,26 @@
       {
         "label": "CRXDE Lite",
         "url": "/crx/de/index.jsp",
-        "icon": "globe",
-        "brandColor": "info"
+        "icon": "cog",
+        "brandColor": "primary"
       },
       {
         "label": "Package Manger",
         "url": "/crx/packmgr/index.jsp",
         "icon": "cube",
-        "brandColor": "info"
+        "brandColor": "primary"
       },
       {
         "label": "Sites",
         "url": "/sites.html/content/platform-blueprints",
         "icon": "sitemap",
-        "brandColor": "primary"
+        "brandColor": "info"
       },
       {
         "label": "DAM Assets",
         "url": "/assets.html/content/dam",
         "icon": "picture-o",
-        "brandColor": "primary"
+        "brandColor": "info"
       },
       {
         "label": "Rollout Manager",
@@ -119,9 +119,15 @@
         "brandColor": "success"
       },
       {
+        "label": "User Admin",
+        "url": "/useradmin",
+        "icon": "users",
+        "brandColor": "success"
+      },
+      {
         "label": "OSGi Bundles",
         "url": "/system/console/bundles",
-        "icon": "cubes",
+        "icon": "gift",
         "brandColor": "danger"
       },
       {
@@ -147,19 +153,19 @@
       {
         "label": "CRXDE Lite",
         "url": "/crx/de/index.jsp",
-        "icon": "globe",
+        "icon": "cog",
         "brandColor": "primary"
       },
       {
         "label": "Package Manger",
         "url": "/crx/packmgr/index.jsp",
-        "icon": "globe",
+        "icon": "cube",
         "brandColor": "primary"
       },
       {
         "label": "OSGi Bundles",
         "url": "/system/console/bundles",
-        "icon": "globe",
+        "icon": "gift",
         "brandColor": "danger"
       },
       {
@@ -259,35 +265,116 @@
   "mainwebshops": {
     "asadventure": {
       "label": "AS Adventure",
-      "market": "be"
+      "market": "be",
+      "sites": [
+        {
+          "label": "asadventure.com",
+          "liveUrl": "http://www.asadventure.com",
+          "internalUrl": "http://{env}-asadventure-com.foxandcat.eu",
+          "isLive": false
+        },{
+          "label": "asadventure.nl",
+          "liveUrl": "http://www.asadventure.nl",
+          "internalUrl": "http://{env}-asadventure-nl.foxandcat.eu",
+          "isLive": true
+        }
+      ]
+    },
+    "ayacucho": {
+      "label": "Ayacucho",
+      "market": "be",
+      "sites": [
+        {
+          "label": "ayacucho.com",
+          "liveUrl": "http://www.ayacucho.com",
+          "internalUrl": "http://{env}-ayacucho-com.foxandcat.eu",
+          "isLive": false
+        }
+      ]
     },
     "bever": {
       "label": "Bever",
-      "market": "nl"
+      "market": "nl",
+      "sites": [
+        {
+          "label": "bever.nl",
+          "liveUrl": "http://www.bever.nl",
+          "internalUrl": "http://{env}-bever-nl.foxandcat.eu",
+          "isLive": false
+        }
+      ]
     },
     "cotswold": {
       "label": "Cotswold",
-      "market": "uk"
+      "market": "uk",
+      "sites": [
+        {
+          "label": "cotswoldoutdoor.com",
+          "liveUrl": "http://www.cotswoldoutdoor.com",
+          "internalUrl": "http://{env}-cotswoldoutdoor-com.foxandcat.eu",
+          "isLive": false
+        }
+      ]
     },
     "cyclesurgery": {
       "label": "CycleSurgery",
-      "market": "uk"
+      "market": "uk",
+      "sites": [
+        {
+          "label": "cyclesurgery.com",
+          "liveUrl": "http://www.cyclesurgery.com",
+          "internalUrl": "http://{env}-cyclesurgery-com.foxandcat.eu",
+          "isLive": false
+        }
+      ]
     },
     "juttu": {
       "label": "Juttu",
-      "market": "be"
+      "market": "be",
+      "sites": [
+        {
+          "label": "juttu.be",
+          "liveUrl": "http://www.juttu.be",
+          "internalUrl": "http://{env}-juttu-be.foxandcat.eu",
+          "isLive": true
+        }
+      ]
     },
     "runnersneed": {
       "label": "Runnersneed",
-      "market": "uk"
+      "market": "uk",
+      "sites": [
+        {
+          "label": "runnersneed.com",
+          "liveUrl": "http://www.runnersneed.com",
+          "internalUrl": "http://{env}-runnersneed-com.foxandcat.eu",
+          "isLive": true
+        }
+      ]
     },
     "snowandrock": {
       "label": "Snow&Rock",
-      "market": "uk"
+      "market": "uk",
+      "sites": [
+        {
+          "label": "snowandrock.com",
+          "liveUrl": "http://www.snowandrock.com",
+          "internalUrl": "http://{env}-snowandrock-com.foxandcat.eu",
+          "isLive": false
+        }
+      ]
     },
     "yaya": {
       "label": "Yaya",
-      "market": "be"
+      "market": "be",
+      "sites": [
+        {
+          "label": "yaya.be",
+          "liveUrl": "http://www.yaya.be",
+          "internalUrl": "http://{env}-yaya-be.foxandcat.eu",
+          "isLive": true
+        }
+      ]
     }
   }
 }
