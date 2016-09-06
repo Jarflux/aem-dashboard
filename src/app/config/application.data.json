@@ -220,6 +220,12 @@
       "url": "https://app.datadoghq.com/dash/136623/aem-prd-002-full-stack?live=true&page=0&is_auto=false&from_ts=1468236902285&to_ts=1468240502285&tile_size=m"
     },
     {
+      "name": "First Aid",
+      "title": "First Aid",
+      "icon": "fa-medkit",
+      "url": "https://asadventure.atlassian.net/wiki/display/WEB/First+Aid"
+    },
+    {
       "name": "Jenkins",
       "title": "Jenkins",
       "icon": "fa-stack-overflow",
@@ -247,7 +253,7 @@
       "name": "Obsid Prd",
       "title": "Obsid Prd",
       "icon": "fa-gavel",
-      "url": "http://engine.abeq.aws.intranet:8080/login"
+      "url": "http://engine-002.abeq.aws.intranet:8080/login"
     },
     {
       "name": "Sonar",
@@ -277,6 +283,21 @@
           "liveUrl": "http://www.asadventure.nl",
           "internalUrl": "http://{env}-asadventure-nl.foxandcat.eu",
           "isLive": true
+        },{
+          "label": "asadventure.co.uk",
+          "liveUrl": "http://www.asadventure.co.uk",
+          "internalUrl": "http://{env}-asadventure-co.uk.foxandcat.eu",
+          "isLive": true
+        },{
+          "label": "asadventure.fr",
+          "liveUrl": "http://www.asadventure.fr",
+          "internalUrl": "http://{env}-asadventure-fr.foxandcat.eu",
+          "isLive": false
+        },{
+          "label": "asadventure.lu",
+          "liveUrl": "http://www.asadventure.lu",
+          "internalUrl": "http://{env}-asadventure-lu.foxandcat.eu",
+          "isLive": false
         }
       ]
     },
@@ -288,6 +309,11 @@
           "label": "ayacucho.com",
           "liveUrl": "http://www.ayacucho.com",
           "internalUrl": "http://{env}-ayacucho-com.foxandcat.eu",
+          "isLive": false
+        },{
+          "label": "ayacucho.co.uk",
+          "liveUrl": "http://www.ayacucho.co.uk",
+          "internalUrl": "http://{env}-ayacucho-co-uk.foxandcat.eu",
           "isLive": false
         }
       ]
@@ -360,7 +386,7 @@
           "label": "snowandrock.com",
           "liveUrl": "http://www.snowandrock.com",
           "internalUrl": "http://{env}-snowandrock-com.foxandcat.eu",
-          "isLive": false
+          "isLive": true
         }
       ]
     },
