@@ -4,6 +4,10 @@
       "name": "LCL",
       "title": "Local",
       "icon": "fa-battery-1",
+      "services": {
+        "apigateway": "apigateway.service.tst.aws.intranet:8080",
+        "consul": "consul-cluster1.tst.aws.intranet:8500"
+      },
       "servers": [
         {
           "server": "author",
@@ -16,6 +20,10 @@
       "name": "TST 001",
       "title": "Test",
       "icon": "fa-battery-2",
+      "services": {
+        "apigateway": "apigateway.service.tst.aws.intranet:8080",
+        "consul": "consul-cluster1.tst.aws.intranet:8500"
+      },
       "servers": [
         {
           "server": "author",
@@ -33,6 +41,10 @@
       "name": "ACC 001",
       "title": "Acceptance",
       "icon": "fa-battery-3",
+      "services": {
+        "apigateway": "apigateway.service.acc.aws.intranet:8080",
+        "consul": "consul-cluster1.acc.aws.intranet:8500"
+      },
       "servers": [
         {
           "server": "author",
@@ -55,6 +67,10 @@
       "name": "PRD 002",
       "title": "Production",
       "icon": "fa-battery-4",
+      "services": {
+        "apigateway": "apigateway.service.prd.aws.intranet:8080",
+        "consul": "consul-cluster1.prd.aws.intranet:8500"
+      },
       "servers": [
         {
           "server": "author",
@@ -278,22 +294,26 @@
           "liveUrl": "http://www.asadventure.com",
           "internalUrl": "http://{env}-asadventure-com.foxandcat.eu",
           "isLive": false
-        },{
+        },
+        {
           "label": "asadventure.nl",
           "liveUrl": "http://www.asadventure.nl",
           "internalUrl": "http://{env}-asadventure-nl.foxandcat.eu",
           "isLive": true
-        },{
+        },
+        {
           "label": "asadventure.co.uk",
           "liveUrl": "http://www.asadventure.co.uk",
           "internalUrl": "http://{env}-asadventure-co.uk.foxandcat.eu",
           "isLive": true
-        },{
+        },
+        {
           "label": "asadventure.fr",
           "liveUrl": "http://www.asadventure.fr",
           "internalUrl": "http://{env}-asadventure-fr.foxandcat.eu",
           "isLive": false
-        },{
+        },
+        {
           "label": "asadventure.lu",
           "liveUrl": "http://www.asadventure.lu",
           "internalUrl": "http://{env}-asadventure-lu.foxandcat.eu",
@@ -310,7 +330,8 @@
           "liveUrl": "http://www.ayacucho.com",
           "internalUrl": "http://{env}-ayacucho-com.foxandcat.eu",
           "isLive": false
-        },{
+        },
+        {
           "label": "ayacucho.co.uk",
           "liveUrl": "http://www.ayacucho.co.uk",
           "internalUrl": "http://{env}-ayacucho-co-uk.foxandcat.eu",
@@ -402,7 +423,63 @@
         }
       ]
     }
-  }
+  },
+  "statusCheckers": [
+    {
+      "type": "service",
+      "label": "Apigateway",
+      "url_public": "/actuator/health",
+      "url_internal": "/actuator/health",
+      "statusChecker": "actuatorCheck",
+      "icon": "cog",
+      "brandColor": "primary"
+    },
+    {
+      "type": "service",
+      "label": "Basket-service",
+      "url_public": "/basket-service/basket-service/actuator/health",
+      "url_internal": "/basket-service/actuator/health",
+      "statusChecker": "actuatorCheck",
+      "icon": "cog",
+      "brandColor": "primary"
+    },
+    {
+      "type": "service",
+      "label": "Price-service",
+      "url_public": "/price-service/price-service/actuator/health",
+      "url_internal": "/price-service/actuator/health",
+      "statusChecker": "actuatorCheck",
+      "icon": "cog",
+      "brandColor": "primary"
+    },
+    {
+      "type": "service",
+      "label": "Product-service",
+      "url_public": "/product-service/product-service/actuator/health",
+      "url_internal": "/product-service/actuator/health",
+      "statusChecker": "actuatorCheck",
+      "icon": "cog",
+      "brandColor": "primary"
+    },
+    {
+      "type": "service",
+      "label": "Customer-service",
+      "url_public": "/customer-service/customer-service/actuator/health",
+      "url_internal": "/customer-service/actuator/health",
+      "statusChecker": "actuatorCheck",
+      "icon": "cog",
+      "brandColor": "primary"
+    },
+    {
+      "type": "service",
+      "label": "Session-service",
+      "url_public": "/session-service/session-service/actuator/health",
+      "url_internal": "/session-service/actuator/health",
+      "statusChecker": "actuatorCheck",
+      "icon": "cog",
+      "brandColor": "primary"
+    }
+  ]
 }
 
 

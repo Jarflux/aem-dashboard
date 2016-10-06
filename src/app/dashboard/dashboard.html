@@ -27,13 +27,30 @@
 
     <div class="col-md-3" ng-hide="vm.environmentKey == 'local'">
       <div class="panel panel-dark">
+        <div class="panel-heading text-capitalize">Status <i class="fa fa-link pull-right"></i></div>
+
+        <ul class="list-group list-group-bordered">
+          <li class="list-group-item" ng-repeat="site in vm.sites">
+            <a ng-show="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.liveUrl }}">{{
+              site.label
+              }} <i class="fa fa-globe pull-right"></i></a>
+            <a ng-hide="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.internalUrl }}">{{
+              site.label
+              }} <i class="fa fa-globe pull-right"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="panel panel-dark">
         <div class="panel-heading text-capitalize">Sites <i class="fa fa-link pull-right"></i></div>
 
         <ul class="list-group list-group-bordered">
           <li class="list-group-item" ng-repeat="site in vm.sites">
-            <a ng-show="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.liveUrl }}">{{ site.label
+            <a ng-show="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.liveUrl }}">{{
+              site.label
               }} <i class="fa fa-globe pull-right"></i></a>
-            <a ng-hide="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.internalUrl }}">{{ site.label
+            <a ng-hide="site.showLiveSite" class="list-group-link" target="_blank" ng-href="{{ site.internalUrl }}">{{
+              site.label
               }} <i class="fa fa-globe pull-right"></i></a>
           </li>
         </ul>
