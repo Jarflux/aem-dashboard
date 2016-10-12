@@ -47,7 +47,7 @@
         {
           "server": "publish b",
           "type": "publish",
-          "url": "http://publish-b-001.acc.aws.intranet:4503"
+          "url": "http://publish-c-001.acc.aws.intranet:4503"
         }
       ]
     },
@@ -232,34 +232,27 @@
       "url": "http://cissy.aws.intranet:7080/view/AEM/"
     },
     {
-      "name": "JIRA",
-      "title": "JIRA",
+      "name": "SPRINT",
+      "title": "SPRINT",
       "icon": "fa-tasks",
       "url": "https://asadventure.atlassian.net/secure/RapidBoard.jspa?projectKey=ASWR&rapidView=5"
-    },
-    {
-      "name": "Nexus",
-      "title": "Nexus",
-      "icon": "fa-cubes",
-      "url": "http://cissy.aws.intranet:8081/nexus"
+    },    {
+      "name": "SUPPORT",
+      "title": "SUPPORT",
+      "icon": "fa-tasks",
+      "url": "https://asadventure.atlassian.net/secure/RapidBoard.jspa?rapidView=26"
     },
     {
       "name": "Obsid Acc",
       "title": "Obsid Acc",
       "icon": "fa-gavel",
-      "url": "http://engine.acc.abeq.aws.intranet:8080/login"
+      "url": "http://10.99.22.43:8080/obsidian/#/configuration/jobs"
     },
     {
       "name": "Obsid Prd",
       "title": "Obsid Prd",
       "icon": "fa-gavel",
-      "url": "http://engine-002.abeq.aws.intranet:8080/login"
-    },
-    {
-      "name": "Sonar",
-      "title": "Sonar",
-      "icon": "fa-wifi",
-      "url": "http://cissy.aws.intranet:9000/"
+      "url": "http://10.99.22.150:8080/obsidian/#/configuration/jobs"
     },
     {
       "name": "Toggl",
@@ -277,7 +270,7 @@
           "label": "asadventure.com",
           "liveUrl": "http://www.asadventure.com",
           "internalUrl": "http://{env}-asadventure-com.foxandcat.eu",
-          "isLive": false
+          "isLive": true
         },{
           "label": "asadventure.nl",
           "liveUrl": "http://www.asadventure.nl",
@@ -350,7 +343,7 @@
           "label": "cyclesurgery.com",
           "liveUrl": "http://www.cyclesurgery.com",
           "internalUrl": "http://{env}-cyclesurgery-com.foxandcat.eu",
-          "isLive": false
+          "isLive": true
         }
       ]
     },
