@@ -6,9 +6,8 @@
     .service('applicationValidatorActuatorCheck', applicationValidatorActuatorCheck);
 
   /** @ngInject */
-  function applicationValidatorActuatorCheck(applicationValidatorAbstract, applicationDataService) {
+  function applicationValidatorActuatorCheck(applicationValidatorAbstract, $log, applicationDataService) {
     var log = $log.getInstance('applicationValidatorActuatorCheck');
-
 
     var data = {
       to_check_public_url: undefined,

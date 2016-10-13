@@ -6,7 +6,7 @@
     .service('applicationValidatorAbstract', applicationValidatorAbstract);
 
   /** @ngInject */
-  function applicationValidatorAbstract() {
+  function applicationValidatorAbstract($log) {
     var log = $log.getInstance('applicationValidatorAbstract');
 
     return {
