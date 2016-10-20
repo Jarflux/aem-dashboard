@@ -125,6 +125,12 @@
         "brandColor": "success"
       },
       {
+        "label": "Translations",
+        "url": "/libs/cq/i18n/translator.html",
+        "icon": "sort-alpha-asc",
+        "brandColor": "success"
+      },
+      {
         "label": "OSGi Bundles",
         "url": "/system/console/bundles",
         "icon": "gift",
@@ -161,6 +167,12 @@
         "url": "/crx/packmgr/index.jsp",
         "icon": "cube",
         "brandColor": "primary"
+      },
+      {
+        "label": "Translations",
+        "url": "/libs/cq/i18n/translator.html",
+        "icon": "sort-alpha-asc",
+        "brandColor": "success"
       },
       {
         "label": "OSGi Bundles",
