@@ -244,13 +244,13 @@
       "url": "http://cissy.aws.intranet:7080/view/AEM/"
     },
     {
-      "name": "SPRINT",
-      "title": "SPRINT",
+      "name": "Sprint",
+      "title": "Sprint",
       "icon": "fa-tasks",
       "url": "https://asadventure.atlassian.net/secure/RapidBoard.jspa?projectKey=ASWR&rapidView=5"
     },    {
-      "name": "SUPPORT",
-      "title": "SUPPORT",
+      "name": "Support",
+      "title": "Support",
       "icon": "fa-tasks",
       "url": "https://asadventure.atlassian.net/secure/RapidBoard.jspa?rapidView=26"
     },
