@@ -254,7 +254,8 @@
       "title": "Sprint",
       "icon": "fa-tasks",
       "url": "https://asadventure.atlassian.net/secure/RapidBoard.jspa?projectKey=ASWR&rapidView=5"
-    },    {
+    },
+    {
       "name": "Support",
       "title": "Support",
       "icon": "fa-tasks",
@@ -410,6 +411,18 @@
           "liveUrl": "http://www.yaya.be",
           "internalUrl": "http://{env}-yaya-be.foxandcat.eu",
           "isLive": true
+        }
+      ]
+    },
+    "outdoor-exclusive": {
+      "label": "Outdoor Exclusive",
+      "market": "be",
+      "sites": [
+        {
+          "label": "outdoor-exclusive.com",
+          "liveUrl": "http://www.outdoor-exclusive.com",
+          "internalUrl": "http://{env}-outdoor-exclusive-com.foxandcat.eu",
+          "isLive": false
         }
       ]
     }
