@@ -169,6 +169,12 @@
         "brandColor": "primary"
       },
       {
+        "label": "Replication Agents",
+        "url": "/etc/replication/agents.publish.html",
+        "icon": "refresh",
+        "brandColor": "success"
+      },
+      {
         "label": "Translations",
         "url": "/libs/cq/i18n/translator.html",
         "icon": "sort-alpha-asc",
