@@ -47,7 +47,7 @@
         {
           "server": "publish b",
           "type": "publish",
-          "url": "http://publish-c-001.acc.aws.intranet:4503"
+          "url": "http://publish-b-001.acc.aws.intranet:4503"
         }
       ]
     },
